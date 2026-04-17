@@ -15,4 +15,10 @@
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
     refs.modal.classList.toggle("is-open");
   }
+
+  const menuLinks = document.querySelectorAll(".mobile-nav-link");
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", toggleModal);
+  });
 })();
