@@ -506,6 +506,10 @@ input:focus {
     max-width: 1440px;
     padding: 188px 0;
   }
+
+  .page-hero-title {
+    margin: 0 auto 48px;
+  }
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -637,6 +641,7 @@ input:focus {
   color: #2e2f42;
 
   margin-bottom: 72px;
+  padding: 0;
 }
 
 .team-list {
@@ -766,11 +771,11 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-
-  width: 288px;
 }
 
 .portfolio-item {
+  width: 288px;
+  margin: 0 auto;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -879,7 +884,7 @@ input:focus {
   padding: 96px 0;
 }
 
-.footer-conteiner {
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
