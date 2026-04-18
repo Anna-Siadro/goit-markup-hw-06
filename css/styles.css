@@ -868,7 +868,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 72px;
 }
 
@@ -1019,7 +1019,47 @@ input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-}
+  .footer-conteiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px 24px;
+  }
 
-@media screen and (min-width: 1158px) {
+  .footer-info {
+    width: 264px;
+  }
+
+  .footer-logo-text {
+    width: 264px;
+  }
+
+  .footer-social {
+    width: 208px;
+    margin: 0;
+  }
+
+  .footer-subscribe {
+    width: 264px;
+  }
+
+  .footer-form-subscribe {
+    flex-direction: row;
+    justify-content: start;
+    gap: 24px;
+    width: 453px;
+  }
+
+  .subscribe-button {
+    margin: 0;
+  }
+
+  .footer-text-form {
+    text-align: start;
+  }
+
+  .footer-text-links {
+    margin: 0;
+  }
 }
