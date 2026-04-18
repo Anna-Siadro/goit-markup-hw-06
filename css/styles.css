@@ -730,10 +730,6 @@ input:focus {
 }
 
 @media screen and (min-width: 1158px) {
-  .page-team-title {
-    padding: 120px 0;
-  }
-
   .team-list {
     display: flex;
     flex-direction: row;
@@ -1038,7 +1034,7 @@ input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-conteiner {
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
