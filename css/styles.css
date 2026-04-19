@@ -1051,8 +1051,7 @@ input::placeholder {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
     gap: 72px 24px;
   }
 
@@ -1070,14 +1069,21 @@ input::placeholder {
   }
 
   .footer-subscribe {
-    width: 264px;
+    margin-right: auto;
+    margin-left: 108px;
   }
 
   .footer-form-subscribe {
     flex-direction: row;
     justify-content: start;
-    gap: 24px;
+
     width: 453px;
+  }
+
+  .form-input-sub {
+    margin-right: 24px;
+    width: 264px;
+    height: 40px;
   }
 
   .subscribe-button {
@@ -1098,10 +1104,6 @@ input::placeholder {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-  }
-
-  .footer-social {
-    margin-right: 80px;
   }
 
   .page-footer {
