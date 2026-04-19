@@ -896,7 +896,7 @@ input:focus {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 72px;
@@ -963,7 +963,6 @@ input:focus {
 }
 
 .footer-text-form {
-  display: block;
   text-align: center;
   padding: 0;
 
@@ -976,7 +975,7 @@ input:focus {
 
 .footer-form-subscribe {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -1051,6 +1050,7 @@ input::placeholder {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     gap: 72px 24px;
   }
@@ -1069,19 +1069,19 @@ input::placeholder {
   }
 
   .footer-subscribe {
-    margin-right: auto;
-    margin-left: 108px;
+    align-items: flex-start;
+    width: 453px;
   }
 
   .footer-form-subscribe {
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 
-    width: 453px;
+    width: 100%;
   }
 
   .form-input-sub {
-    margin-right: 24px;
     width: 264px;
     height: 40px;
   }
@@ -1097,17 +1097,31 @@ input::placeholder {
   .footer-text-links {
     margin: 0;
   }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .footer-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 80px;
   }
 
   .page-footer {
     padding: 100px 0;
+  }
+
+  .footer-info {
+    max-width: 264px;
+    margin-right: 40px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
   }
 }
 
