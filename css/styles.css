@@ -1053,6 +1053,11 @@ input::placeholder {
     align-items: flex-start;
 
     gap: 72px 24px;
+
+    justify-content: flex-start;
+
+    margin: 0 auto;
+    padding-left: 93px;
   }
 
   .footer-info {
@@ -1070,13 +1075,14 @@ input::placeholder {
 
   .footer-subscribe {
     align-items: flex-start;
-    width: 453px;
+    max-width: 453px;
   }
 
   .footer-form-subscribe {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    gap: 0;
 
     width: 100%;
   }
@@ -1087,7 +1093,7 @@ input::placeholder {
   }
 
   .subscribe-button {
-    margin: 0;
+    margin-left: 24px;
   }
 
   .footer-text-form {
@@ -1107,8 +1113,10 @@ input::placeholder {
 @media screen and (min-width: 1158px) {
   .footer-container {
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 80px;
+    margin-left: auto;
+    padding-left: 15px;
   }
 
   .page-footer {
@@ -1118,6 +1126,10 @@ input::placeholder {
   .footer-info {
     max-width: 264px;
     margin-right: 40px;
+  }
+
+  .footer-text {
+    width: 264px;
   }
 
   .footer-subscribe {
